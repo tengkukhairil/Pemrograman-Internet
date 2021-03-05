@@ -15,7 +15,7 @@ $tbl_mahasiswa = query("SELECT * FROM mahasiswa");
 </head>
 
 <body>
-    <h3></h3>
+    <h3>Daftar Mahasiswa</h3>
     <table border="1" cellpadding="10" cellspacing="0">
         <tr>
             <th>No</th>
