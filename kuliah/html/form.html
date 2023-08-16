@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form HTML</title>
+</head>
+
+<body>
+    <h3>
+        <center>FORMULIR BIODATA DIRI</center>
+    </h3>
+    <form action="" method="POST">
+        <table border="0" width="45%" align="center">
+            <tr>
+                <td colspan="2">
+                    <hr>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <strong>Isilah biodata anda dengan lengkap pada form di bawah ini..!</strong>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <hr>
+                </td>
+            </tr>
+            <tr>
+                <td>Nama Lengkap</td>
+                <td><input type="text" name="nama" size="35" autofocus required></td>
+            </tr>
+            <tr>
+                <td>Tempat/Tgl/Jam Lahir</td>
+                <td>
+                    <input type="text" name="tempat_lahir" size="15" required> -
+                    <input type="date" name="tanggal_lahir" required> -
+                    <input type="time" name="jam_lahir" required>
+                </td>
+            </tr>
+            <tr>
+                <td>Jenis Kelamin</td>
+                <td>
+                    <label><input type="radio" name="kelamin" value="Laki-laki" checked> Laki-laki</label>
+                    <label><input type="radio" name="kelamin" value="Perempuan"> Perempuan</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Agama</td>
+                <td>
+                    <select name="agama">
+                        <option value="Islam">Islam</option>
+                        <option value="Kristen Katolik">Kristen Katolik</option>
+                        <option value="Kristen Protestan">Kristen Protestan</option>
+                        <option value="Budha">Budha</option>
+                        <option value="Hindu">Hindu</option>
+                        <option value="Konghucu">Konghucu</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">Alamat Rumah</td>
+                <td>
+                    <textarea name="alamat" cols="40" rows="4" required></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>No. Telpon</td>
+                <td><input type="number" name="telpon" size="10" required placeholder="+628123456789"></td>
+            </tr>
+            <tr>
+                <td>E-Mail</td>
+                <td><input type="email" name="email" size="35" required></td>
+            </tr>
+            <tr>
+                <td>URL</td>
+                <td><input type="url" name="url" size="45" placeholder="https://"></td>
+            </tr>
+            <tr>
+                <td>Warna Kesukaan</td>
+                <td><input type="color" name="warna"></td>
+            </tr>
+            <tr>
+                <td valign="top">Hobby</td>
+                <td>
+                    <input type="checkbox"> Komputer
+                    <input type="checkbox"> Musik
+                    <input type="checkbox"> Olahraga
+                    <input type="checkbox"> Jalan-jalan <br>
+                    <input type="checkbox"> Lainnya <input type="text" size="15">
+                </td>
+            </tr>
+            <tr>
+                <td>Upload Foto (3x4)</td>
+                <td><input type="file" name="foto"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <hr>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <strong>Isilah Username dan Password baru anda di bawah ini..!</strong>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <hr>
+                </td>
+            </tr>
+            <tr>
+                <td>Username Baru</td>
+                <td><input type="text" name="username" size="15" required></td>
+            </tr>
+            <tr>
+                <td>Password Baru</td>
+                <td><input type="password" name="password1" size="15" required></td>
+            </tr>
+            <tr>
+                <td>Konfirmasi Password</td>
+                <td><input type="password" name="password2" size="15" required></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <hr>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td align="right"><button type="submit">Submit</button> <button type="reset">Batal</button></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

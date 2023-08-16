@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .box {
+            float: left;
+            width: 33.33%;
+            padding: 10px;
+        }
+
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Grid of Boxes</h2>
+
+    <div class="clearfix">
+        <div class="box" style="background-color:#bbb">
+            <p>Teks ini di dalam box.</p>
+        </div>
+        <div class="box" style="background-color:#ccc">
+            <p>Teks ini di dalam box.</p>
+        </div>
+        <div class="box" style="background-color:#ddd">
+            <p>Teks ini di dalam box.</p>
+        </div>
+    </div>
+
+    <p>Gunakan clearfix untuk menangani aliran tata letak, dan
+        menambahkan properti box-sizing untuk memastikan bahwa
+        box tidak rusak karena ekstra padding. Coba hapus kode
+        box-sizing untuk melihat efeknya.</p>
+
+</body>
+
+</html>

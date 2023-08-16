@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        div>p {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Child Selector</h2>
+    <p>Selector child (>) memilih semua elemen yang merupakan turunan dari elemen tertentu.</p>
+
+    <div>
+        <p>Paragraf 1 berada dalam div.</p>
+        <p>Paragraf 2 berada dalam div.</p>
+        <section>
+            <p>Paragraf 3 berada dalam div.</p>
+        </section> <!-- Bukan Child tapi Descendant -->
+        <p>Paragraf 4 berada dalam div.</p>
+    </div>
+
+    <p>Paragraf 5. tidak berada dalam div.</p>
+    <p>Paragraf 6. tidak berada dalam div.</p>
+
+</body>
+
+</html>

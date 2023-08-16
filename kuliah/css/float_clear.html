@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .div1 {
+            float: left;
+            width: 100px;
+            height: 50px;
+            margin: 10px;
+            border: 3px solid #73AD21;
+        }
+
+        .div2 {
+            border: 1px solid red;
+        }
+
+        .div3 {
+            float: left;
+            width: 100px;
+            height: 50px;
+            margin: 10px;
+            border: 3px solid #73AD21;
+        }
+
+        .div4 {
+            border: 1px solid red;
+            clear: left;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Tanpa Clear</h2>
+    <div class="div1">Div 1</div>
+    <div class="div2">Div 2 - Perhatikan div 2 setelah div1 dalam kode HTML. Karena div1 diset Float Kiri, teks
+        div 2 mengalir di sekitar div 1.</div>
+    <br><br>
+
+    <h2>Dengan clear</h2>
+    <div class="div3">Div 3</div>
+    <div class="div4">Div 4 - Disini menggunakan sintak clear: left; Oleh sebab itu Div 4 turun kebawah setelah Div 3.
+        Jadi, nilai dari elemen float: left dibersihkan. Dapat juga menggunakan clear: right; dan clear: both;</div>
+
+</body>
+
+</html>

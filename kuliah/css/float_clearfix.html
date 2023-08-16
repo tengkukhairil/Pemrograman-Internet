@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        div {
+            border: 3px solid #4CAF50;
+            padding: 5px;
+        }
+
+        .img1 {
+            float: right;
+        }
+
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .img2 {
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Float - Clearfix</h2>
+    <div>
+        <img class="img1" src="gambar.jpg" width="80">
+        Ini Div yang floatnya masih bermasalah, jika anda menemukan permasalahan seperti ini lihat instruksi di bawah...
+    </div>
+    <p style="clear:right">Tambahkan class clearfix untuk memperbaiki masalah ini:</p>
+    <div class="clearfix">
+        <img class="img2" src="gambar.jpg" width="80">
+        Ini kalimat dalam div yang sudah diperbaiki dengan menambahkan class clearfix...
+    </div>
+
+</body>
+
+</html>

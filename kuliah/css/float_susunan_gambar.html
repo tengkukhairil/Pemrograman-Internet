@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .img-container {
+            float: left;
+            width: 33.33%;
+            padding: 5px;
+        }
+
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        img {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Images Side by Side</h2>
+    <div class="clearfix">
+        <div class="img-container">
+            <img src="gambar.jpg" alt="gambar 1">
+        </div>
+        <div class="img-container">
+            <img src="gambar.jpg" alt="gambar 2">
+        </div>
+        <div class="img-container">
+            <img src="gambar.jpg" alt="gambar 3">
+        </div>
+    </div>
+
+    <p>Gunakan clearfix untuk menangani aliran tata letak, dan
+        menambahkan properti box-sizing untuk memastikan bahwa
+        box tidak rusak karena ekstra padding. Coba hapus kode
+        box-sizing untuk melihat efeknya.</p>
+
+</body>
+
+</html>
